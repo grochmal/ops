@@ -1,0 +1,9 @@
+This is a longer file, which should be compressed by nginx gzip module.  To
+test it with curl one can use --compressed and curl itself will use zlib to
+decompress it back into plain text.
+
+Note that this file needs to be longer than nginx's gzip_min_length in order to
+be compressed on the fly.
+
+Mom, I'm uncompressed now!
+
