@@ -1,5 +1,6 @@
 #!/bin/sh
 
-curl -I https://www.grochmal.org
-#grep 'Location: https://www.grochmal.org'
+curl -w 'SCHEME: %{scheme}\n' \
+     -I https://grochmal.org/.error-pages/index.html |
+grep 'SCHEME: HTTPS'
 

@@ -15,7 +15,7 @@ do
         echo PASS
         ((pass++))
     else
-        echo FAIL
+        echo '****** FAIL ******'
         ((fail++))
     fi
     sleep 1  # just in case

@@ -1,0 +1,19 @@
+# robots.txt for grochmal.org and friends
+
+# wget without --wait can go bonkers
+User-agent: wget
+Disallow: /
+
+# old problematic bot
+User-agent: WebReaper
+Disallow: /
+
+# these would be problematic if were crawled
+User-agent: *
+Disallow: /.well-known/
+Disallow: /.error-pages/
+Disallow: /jupyter/
+Disallow: /public/
+Disallow: /search
+Crawl-delay: 10
+

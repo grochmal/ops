@@ -1,6 +1,6 @@
 #!/bin/sh
 
 curl -H 'Referer: http://example.com' \
-     -I http://norm.grochmal.org/.error-pages/favicon.png |
+     -I http://grochmal.org/public/mycv.pdf |
 grep '302 Moved Temporarily'
 
