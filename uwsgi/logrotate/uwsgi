@@ -1,0 +1,13 @@
+/var/log/uwsgi/*log {
+    create 0644 uwsgi uwsgi
+    daily
+    rotate 100
+    missingok
+    notifempty
+    compress
+    sharedscripts
+    postrotate
+        /etc/uwsgi-emperor/reopen-logs.sh 2>/dev/null || true
+    endscript
+}
+
