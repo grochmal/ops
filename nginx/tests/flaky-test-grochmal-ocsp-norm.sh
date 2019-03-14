@@ -3,5 +3,5 @@
 # Note: this is a flaky test, you can ignore its failure.
 echo QUIT |
 openssl s_client -connect norm.grochmal.org:443 -tls1 -tlsextdebug -status |
-grep 'OCSP Response Status: successful (0x0)'
+grep -i 'OCSP Response Status: successful (0x0)'
 

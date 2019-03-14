@@ -2,5 +2,5 @@
 
 curl -H 'Accept-Encoding: gzip' \
      -I http://www.grochmal.org/.error-pages/gzip-big.txt |
-grep 'Vary:.*Accept-Encoding'
+grep -i 'Vary:.*Accept-Encoding'
 

@@ -2,5 +2,5 @@
 
 curl -w 'SCHEME: %{scheme}\n' \
      -I https://grochmal.org/.error-pages/index.html |
-grep 'SCHEME: HTTPS'
+grep -i 'SCHEME: HTTPS'
 

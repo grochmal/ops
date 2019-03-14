@@ -1,5 +1,5 @@
 #!/bin/sh
 
 curl -I http://grochmal.org/favicon.ico |
-grep 'Content-Type: image/png'
+grep -i 'Content-Type: image/png'
 

@@ -4,5 +4,5 @@
 echo QUIT |
 openssl s_client -connect norm.neptunepenguin.net:443 \
                  -tls1 -tlsextdebug -status |
-grep 'OCSP Response Status: successful (0x0)'
+grep -i 'OCSP Response Status: successful (0x0)'
 

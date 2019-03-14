@@ -1,5 +1,5 @@
 #!/bin/sh
 
 curl -I http://norm.grochmal.org/.error-pages/index.html |
-grep 'Cache-Control: max-age='
+grep -i 'Cache-Control: max-age='
 
